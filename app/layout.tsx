@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://tchilla.com",
-    site_name: "Tchilla",
+    siteName: "Tchilla",
     images: [
       {
         url: "https://tchilla.com/og-image.jpg",
@@ -35,7 +35,7 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4kkYkastOdLpSPvzoDGfRSpdpc6q8u.png"
+          href="https:/.public..vercel-storage.com/image-4kkYkastOdLpSPvzoDGfRSpdpc6q8u.png"
           type="image/png"
           sizes="32x32"
         />
