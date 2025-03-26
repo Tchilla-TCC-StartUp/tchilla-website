@@ -118,16 +118,17 @@ export default function Home() {
 
       <AnimatePresence>
         {showFAB && (
-          <motion.button
+          <motion.a
             className="fixed bottom-8 right-8 bg-gradient-to-r from-[#002B4C] to-[#005694] text-white p-4 rounded-full shadow-lg pulse"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            href="https://github.com/Tchilla-TCC-StartUp/tchilla-app-user/releases/download/v1.0.12/tchilla-release.apk"
           >
             <Download size={24} />
-          </motion.button>
+          </motion.a>
         )}
       </AnimatePresence>
     </div>
@@ -504,7 +505,7 @@ function CTA() {
         </p>
         <div className="flex gap-4 mt-6">
           {/* Botão Google Play */}
-          <a href="https://play.google.com/store/apps/details?id=seu.app.id" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Tchilla-TCC-StartUp/tchilla-app-user/releases/download/v1.0.12/tchilla-release.apk" target="_blank" rel="noopener noreferrer">
             <img src="android.png" alt="Disponível no Google Play" className="w-40 hover:opacity-80 transition-opacity" />
           </a>
 
