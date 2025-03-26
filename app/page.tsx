@@ -118,16 +118,17 @@ export default function Home() {
 
       <AnimatePresence>
         {showFAB && (
-          <motion.button
+          <motion.a
             className="fixed bottom-8 right-8 bg-gradient-to-r from-[#002B4C] to-[#005694] text-white p-4 rounded-full shadow-lg pulse"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            href="https://github.com/Tchilla-TCC-StartUp/tchilla-app-user/releases/download/v1.0.12/tchilla-release.apk"
           >
             <Download size={24} />
-          </motion.button>
+          </motion.a>
         )}
       </AnimatePresence>
     </div>
@@ -161,9 +162,9 @@ function Hero({ scrollY }: { scrollY: number }) {
         }}
       >
         <motion.img
-          src="/homepage.png?height=600&width=300"
+          src="/mobile-app.gif"
           alt="Tchilla App Interface"
-          className="w-64 h-auto mx-auto rounded-3xl shadow-2xl"
+          className="w-[48rem] h-auto mx-auto rounded-3xl"
           // animate={{
           //   rotateY: [0, 360],
           //   boxShadow: [
@@ -172,15 +173,10 @@ function Hero({ scrollY }: { scrollY: number }) {
           //     "0 25px 50px -12px rgba(0, 43, 76, 0.25)",
           //   ],
           // }}
+          //animate={{ scale: [1, 1.2, 1], opacity: [0.7, 1, 0.7] }}
           transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
         />
-        <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          animate={{ scale: [1, 1.2, 1], opacity: [0.7, 1, 0.7] }}
-          transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-        >
-          <Party size={48} className="text-[#002B4C]" />
-        </motion.div>
+      
       </motion.div>
       <motion.div
         animate={{ y: [0, 10, 0] }}
@@ -509,7 +505,7 @@ function CTA() {
         </p>
         <div className="flex gap-4 mt-6">
           {/* Botão Google Play */}
-          <a href="https://play.google.com/store/apps/details?id=seu.app.id" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Tchilla-TCC-StartUp/tchilla-app-user/releases/download/v1.0.12/tchilla-release.apk" target="_blank" rel="noopener noreferrer">
             <img src="android.png" alt="Disponível no Google Play" className="w-40 hover:opacity-80 transition-opacity" />
           </a>
 
